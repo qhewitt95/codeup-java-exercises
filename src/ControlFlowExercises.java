@@ -41,10 +41,16 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
     //FOR LOOP FOR -10 - 100
-        for (int i = 100; i >= -10; i -= 5) {
-            System.out.println(i);
-        }
+//        for (int i = 100; i >= -10; i -= 5) {
+//            System.out.println(i);
+//        }
 
+        for (int i = 0; i <= 100 ; i++) {
+
+            if(i%3 == 0) {
+                System.out.println("This is Fizz " + i);
+            }
+        }
 
     }
 }
