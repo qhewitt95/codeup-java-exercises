@@ -29,10 +29,18 @@ public class ConsoleExercises {
 //        System.out.println("You entered: --> \"" + userInput + "\" <--");
 
 
-        System.out.print("Enter length and width of Codeup classroom: ");
-        String perimeter = scanner.nextLine();
-        double area = ((2 * Double.parseDouble(perimeter)) + (2 * Double.parseDouble(perimeter)));
-        System.out.printf("%f", area);
+        System.out.println("Enter length and width of Codeup classroom: ");
+        System.out.println("Give us a width: ");
+        double width = Double.parseDouble(scanner.nextLine());
+
+        System.out.println("Give us a length: ");
+        double length = Double.parseDouble(scanner.nextLine());
+
+        double area = length * width;
+        System.out.println("Area "+ area);
+
+        double perimeter =( width *2) + (length *2);
+        System.out.println("Perimeter is: " + perimeter);
     }
 
 }
