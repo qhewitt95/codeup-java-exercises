@@ -24,8 +24,16 @@ public class ConsoleExercises {
 
     //Question 3,4
         //next() only gets one word
-        System.out.print("Enter a sentence: ");
-        String userInput = scanner.nextLine();
-        System.out.println("You entered: --> \"" + userInput + "\" <--");
+//        System.out.print("Enter a sentence: ");
+//        String userInput = scanner.nextLine();
+//        System.out.println("You entered: --> \"" + userInput + "\" <--");
+
+
+        System.out.print("Enter length and width of Codeup classroom: ");
+        String perimeter = scanner.nextLine();
+        double area = ((2 * Double.parseDouble(perimeter)) + (2 * Double.parseDouble(perimeter)));
+        System.out.printf("%f", area);
     }
+
 }
+
