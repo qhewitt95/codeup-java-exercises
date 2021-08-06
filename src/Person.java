@@ -23,7 +23,8 @@ private String name;
     public static void main(String[] args) {
         Person quentin = new Person("Quentin");
 
-
+        System.out.println(quentin. getName());
+        quentin.sayHello();
 
     }
 }
