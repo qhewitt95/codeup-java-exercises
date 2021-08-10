@@ -4,9 +4,9 @@ public class movies {
 private String name;
         private String category;
 
-    public void Movie (String name, String category) {
+    public void Movie (String name, String catagory) {
         this.name = name;
-        this.category = category;
+        this.category = catagory;
     }
 
     public String getName() {
@@ -22,6 +22,6 @@ private String name;
     }
 
     public void setCategory(String category) {
-        this.category = category;
+        this.category = this.category;
     }
 }
