@@ -1,5 +1,7 @@
 package grades;
 
+import util.Input;
+
 import java.util.HashMap;
 
 public class GradesApplication {
@@ -33,9 +35,36 @@ public class GradesApplication {
         students.putIfAbsent("vegetasrevenge", casey);
         students.putIfAbsent("jreich5", ry);
 
+        commandLineInterface(students);
     }
 
+    public static void commandLineInterface(HashMap<String,Student> students){
+        Input input = new Input();
+            do {
+                System.out.println("Welcome!\n" +
+                        "\n" +
+                        "Here are the GitHub usernames of our students:");
 
+                for (String key : students.keySet()) {
+                    System.out.print("|" + key + "|");
+                }
+
+                System.out.println("What student would you like to see more information on?\n");
+
+                String userKey = input.getString();
+
+                if (students.containsKey(userKey)) {
+                    Student currentStudent = students.get(userKey);
+
+                    System.out.println("Name: " + currentStudent.getName() + "Github Username: " + userKey);
+                    System.out.println("Current Average: " + currentStudent.getGradeAverage());
+                } else {
+                    System.out.println("Sorry, there's no student with that Github username: " + userKey);
+                }
+
+                System.out.println("Would you like to see another student?");
+            } while (input.yesNo());
+    }
 
 
 
