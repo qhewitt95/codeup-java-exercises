@@ -32,12 +32,12 @@ public class Student {
 
 
     public static void main(String[] args) {
-        Student sam = new Student("Sam");
-        sam.addGrade(57);
-        sam.addGrade(67);
-        sam.addGrade(77);
+//        Student sam = new Student("Sam");
+//        sam.addGrade(57);
+//        sam.addGrade(67);
+//        sam.addGrade(77);
 
-        System.out.println(sam.getGradeAverage());
+//        System.out.println(sam.getGradeAverage());
     }
 
 }
