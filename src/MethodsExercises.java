@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class MethodsExercise {
+public class MethodsExercises {
 
     public static double Addition(double numOne, double numTwo){
         return numOne + numTwo;
